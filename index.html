@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cash register</title>
+    <link rel="stylesheet"  href="style.css">
+</head>
+<body>
+    <div class="container border">
+        <div class="center">
+        <h3>Cash Register Manager</h3>
+        <p>Enter the bill amount and cash given by the customer and know minimum number of notes to return</p>
+        <label>Bill Amount:</label><br>
+        <input type="number" id="bill-amount" class="border"></input><br>
+        <label>Cash Given:</label><br>
+        <input type="number" maxvalue="3000" id="cash-given"  class="border"></input><br>
+        <button id="check">check</button>
+        <p id="error-message"></p>
+        <p id="return"></p>
+        <table class="table border">
+            <caption >
+                Return Change
+            </caption>
+            <tr>
+                <th class="border">No. of Notes</th>
+                <td class="no-of-notes border"> </td>
+                <td class="no-of-notes border"> </td>
+                <td class="no-of-notes border"> </td>
+                <td class="no-of-notes border"> </td>
+                <td class="no-of-notes border"> </td>
+                <td class="no-of-notes border"> </td>
+                <td class="no-of-notes border"> </td>
+                <td class="no-of-notes border"> </td>
+            </tr>
+            <tr>
+                <th class="border">Note</th>
+                <td class="border">2000</td>
+                <td class="border">500</td>
+                <td class="border">100</td>
+                <td class="border">50</td>
+                <td class="border">20</td>
+                <td class="border">10</td>
+                <td class="border">5</td>
+                <td class="border">1</td>
+            </tr>
+        </table>
+    </div>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
